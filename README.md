@@ -5,7 +5,7 @@ O todo list é um projeto idealizado para organizar as tarefas do seu dia a dia<
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- JavaScript
+- TypeScript
 - React JS
 - Styled Components<br><br>
 
