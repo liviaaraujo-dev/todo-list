@@ -42,14 +42,17 @@ export function Home(){
 
 
     return(
-        <Container>
-            <Title>Lista de Tarefas</Title>
-            <InputAssignment>
-                <input type="text" placeholder="Adicione uma tarefa" onChange={value => setAssignment(value.target.value)} value={assignment}  onKeyDown={enterPressed}/>
-                <button onClick={createAssignment}>
-                    <AiOutlinePlus/>
-                </button>
-            </InputAssignment>
+        <>
+            <Container>
+                    <Title>Lista de Tarefas</Title>
+                    <InputAssignment>
+                        <input type="text" placeholder="Adicione uma tarefa" onChange={value => setAssignment(value.target.value)} value={assignment}  onKeyDown={enterPressed}/>
+                        <button onClick={createAssignment}>
+                            <AiOutlinePlus/>
+                        </button>
+                    </InputAssignment>
+            </Container>
+
             <Assignments>
                 {
                     list?.map(assignment => {
@@ -57,6 +60,6 @@ export function Home(){
                     })
                 }
             </Assignments>
-        </Container>
+        </>
     )
 }

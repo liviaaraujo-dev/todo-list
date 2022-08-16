@@ -1,9 +1,9 @@
 import { AssignmentContainer, ButtonDelete } from "./style";
 import { BsFillTrashFill } from 'react-icons/bs';
-import { database } from "../../services/firebase";
-import { ref, remove } from "firebase/database";
+import { useState } from "react";
+import { ModalDelete } from "../ModalDelete";
 
-type PropsTypes = {
+interface PropsTypes {
     assignment: String | null;
     key: String | null;
     chave: string;
@@ -11,18 +11,26 @@ type PropsTypes = {
 
 export function ItemList(props: PropsTypes){
 
-    function deleteAssignment(chave: string){
-        const firebaseAssignment = remove(ref(database, `list/${chave}`))
-    }
-    
+    const [modal, setModal] = useState(false);
+
 
     return(
-        <AssignmentContainer>
-            <p>{props.assignment}</p>
-            <ButtonDelete onClick={() => deleteAssignment(props.chave)}>
-                <BsFillTrashFill/>
-            </ButtonDelete>
-        </AssignmentContainer>
+        <>
+            <AssignmentContainer>
+                <p>{props.assignment}</p>
+                <ButtonDelete onClick={() => setModal(true)}>
+                    <BsFillTrashFill/>
+                </ButtonDelete>
+            </AssignmentContainer>
+            
+
+            
+            {modal ?
+                <ModalDelete modal={modal} setModal={setModal} chave={props.chave}/>
+                : null
+
+            }
+        </>
     )
     
 }

@@ -7,11 +7,12 @@ export const AssignmentContainer = styled.div`
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    width: auto;
     background-color: #3f3f3f;
     height: 3rem;
     border-radius: .5rem;
     align-items: center;
+    max-width: 900px;
+    margin-left: 18rem;
 
     p{
 

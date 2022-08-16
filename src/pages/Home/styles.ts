@@ -18,15 +18,13 @@ export const GlobalStyle = createGlobalStyle`
 `
 
 export const Title = styled.h1`
-
-
+    margin-bottom: 2rem;
 `
 
 export const Container = styled.div`
     text-align: center;
-    margin: auto;
-    max-width: 980px;
-    padding: 10px;
+    max-width: 900px;
+    margin: 2rem 0 2rem 18rem;
 `
 
 export const InputAssignment = styled.div`

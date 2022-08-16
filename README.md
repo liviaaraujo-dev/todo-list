@@ -7,14 +7,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - TypeScript
 - React JS
-- Styled Components<br><br>
+- Styled Components
+- Firebase / Realtime Database<br><br>
 
 ## Run Locally
 
+### Instalar Dependências
 ~~~bash
 $ npm install
 ~~~
 
+### Executar Projeto
 ~~~bash
 $ npm run dev
 ~~~
