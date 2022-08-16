@@ -1,6 +1,9 @@
 # Todo List
 O todo list é um projeto idealizado para organizar as tarefas do seu dia a dia<br><br>
 
+## Deploy no Netlify
+<https://todo-list-liviaaraujo.netlify.app/>
+
 ## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
